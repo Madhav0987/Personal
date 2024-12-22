@@ -1,0 +1,19 @@
+pipeline{
+  agent any
+    tools {
+	  jdk 'jdk17'
+	  maven 'Maven3'
+	}
+Stages{
+  stage("git checkout"){
+    steps{
+      
+
+
+    }
+
+
+  }
+
+
+}
