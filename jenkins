@@ -7,11 +7,18 @@ pipeline{
 Stages{
   stage("git checkout"){
     steps{
-      
-
-
+      git branch: 'main', changelog: false, poll: false, url: 'https://github.com/Madhav0987/Personal.git'
     }
+  }
+  stage("builing image"){
+      steps{
+        script{
+            
 
+}
+
+
+      }
 
   }
 
