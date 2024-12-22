@@ -13,14 +13,12 @@ Stages{
   stage("builing image"){
       steps{
         script{
-            
-
+          withDockerRegistry(credentialsId: '42a3b536-bbc2-445d-be92-6ba6d4ababb8', toolName: 'docker') {
+              sh 'ocker build -t ubuntu:v1 .'    
 }
-
-
+}
       }
-
   }
 
-
+}
 }
