@@ -47,7 +47,7 @@ pipeline {
 stage('Docker Run'){
 		steps{
 		  script{
-			sh 'docker run -it -d ubuntu:v1
+			sh 'docker run -it -d ubuntu:v1'
 			}
 		    }
 		}
